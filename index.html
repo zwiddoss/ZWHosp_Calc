@@ -1,22 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Premium Parking Revenue Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
     <div class="PremiumCalc">
-        <img src="Premium_Parking_Logo (1).jpg" alt="Premium Parking Premium_Parking_Logo">
         <h2>Premium Parking Revenue Calculator</h2>
-        
-        
         <div class="Inputs">
-
             <form>
                 <div class="hotelRooms">
                     <h3>Hotel Rooms</h3>
@@ -33,26 +26,37 @@
                     <input type="number" id="driveInRate" value="90">
                 </div>
                 <div class="overnightRate">
-                    <h3>Overnight Rate</h3>
+                    <h3>Price One</h3>
                     <h5>(min. $12/night)</h5>
                     <input type="range" id="overnightRate" min="12" max="100" value="12">
                     <span id="overnightRateDisplay">12</span>
                 </div>
-
+                <div class="PriceTwo">
+                    <h3>Price Two</h3>
+                    <h5>(min. $12/night)</h5>
+                    <input type="range" id="PriceTwo" min="12" max="100" value="12">
+                    <span id="overnightRateDisplay2">12</span>
+                </div>
             </form>
-            <div class="realtimeData">
-                <h2>Fill out the form to see your results</h2>
-                <div><span class="dataTitle">Yearly Revenue:</span> <span id="calculatedRevenue">$0</span></div>
-                <div><span class="dataTitle">Profit:</span> <span id="profit">$0</span></div>
-                <div><span class="dataTitle">RevPar:</span> <span id="revPar">$0</span></div>
-                <div><span class="dataTitle">RevPor:</span> <span id="revPor">$0</span></div>
+            <div class="DataBlocks">
+                <div class="realtimeData">
+                    <div id="calculatedRevenue">Yearly Revenue Price One: $0</div>
+                    <div id="profit">Profit: $0</div>
+                    <div id="revPar">RevPar: $0</div>
+                    <div id="revPor">RevPor: $0</div>
+                </div>
+                <div class="realtimeData">
+                    <div id="calculatedRevenue2">Yearly Revenue Price Two: $0</div>
+                    <div id="profit2">Profit: $0</div>
+                    <div id="revPar2">RevPar: $0</div>
+                    <div id="revPor2">RevPor: $0</div>
+                </div>
+                <div class="realtimeData"> <!-- New div for Profit Difference -->
+                    <div id="profitDifference">Profit Difference: $0</div>
+                </div>
             </div>
         </div>
     </div>
-
-
-
     <script src="main.js"></script>
 </body>
-
 </html>
