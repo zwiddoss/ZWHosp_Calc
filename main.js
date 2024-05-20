@@ -23,22 +23,22 @@ function updateYearlyRevenue() {
     const revPor2 = yearlyRevenue2 / 365 / occupiedRooms;
 
     // Calculate profit difference
-    const profitDifference = profit1 - profit2;
+    const profitDifference = profit2 - profit1;
 
     // Update UI elements for Price One
-    document.getElementById("calculatedRevenue").innerText = `Yearly Revenue: $${yearlyRevenue1.toFixed(2)}`;
-    document.getElementById("profit").innerText = `Profit: $${profit1.toFixed(2)}`;
-    document.getElementById("revPar").innerText = `RevPar: $${revPar1.toFixed(2)}`;
-    document.getElementById("revPor").innerText = `RevPor: $${revPor1.toFixed(2)}`;
+    document.getElementById("calculatedRevenue").innerText = `Yearly Revenue: $${yearlyRevenue1.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
+    document.getElementById("profit").innerText = `Profit: $${profit1.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
+    document.getElementById("revPar").innerText = `RevPar: $${revPar1.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
+    document.getElementById("revPor").innerText = `RevPor: $${revPor1.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
 
     // Update UI elements for Price Two
-    document.getElementById("calculatedRevenue2").innerText = `Yearly Revenue: $${yearlyRevenue2.toFixed(2)}`;
-    document.getElementById("profit2").innerText = `Profit: $${profit2.toFixed(2)}`;
-    document.getElementById("revPar2").innerText = `RevPar: $${revPar2.toFixed(2)}`;
-    document.getElementById("revPor2").innerText = `RevPor: $${revPor2.toFixed(2)}`;
+    document.getElementById("calculatedRevenue2").innerText = `Yearly Revenue: $${yearlyRevenue2.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
+    document.getElementById("profit2").innerText = `Profit: $${profit2.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
+    document.getElementById("revPar2").innerText = `RevPar: $${revPar2.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
+    document.getElementById("revPor2").innerText = `RevPor: $${revPor2.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
 
     // Update UI element for Profit Difference
-    document.getElementById("profitDifference").innerText = `Profit Difference: $${profitDifference.toFixed(2)}`;
+    document.getElementById("profitDifference").innerText = `Profit Difference: $${profitDifference.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})}`;
 }
 
 // Initial update on page load

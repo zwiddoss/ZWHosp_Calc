@@ -96,3 +96,18 @@ input[type="range"]::-moz-range-thumb {
     font-weight: bold;
     color: #d32f2f;
 }
+
+input[type="range"]::-webkit-slider-runnable-track,
+input[type="range"]::-moz-range-track {
+    background: #d32f2f;
+    height: 8px;
+    border-radius: 4px;
+}
+input[type="range"]::-webkit-slider-thumb,
+input[type="range"]::-moz-range-thumb {
+    -webkit-appearance: none;
+    background: #fff;
+    border: 2px solid #d32f2f;
+    border-radius: 50%;
+    cursor: pointer;
+}
